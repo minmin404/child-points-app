@@ -1,0 +1,14 @@
+{
+  "name": "child-points-app",
+  "version": "1.0.0",
+  "description": "孩子家务/作业积分管理系统 - 全家共用的奖励App",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "postinstall": "cd server && npm install --omit=dev",
+    "start": "node --experimental-sqlite server/index.js"
+  },
+  "license": "MIT"
+}
